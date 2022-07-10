@@ -1,0 +1,200 @@
+
+    .grupo-individual{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 3vw;
+        flex-wrap: wrap;
+        img{
+            width: 3vw;
+            height: 3vw;
+            margin-top: calc((83px - 3vw) / 3);
+            filter: drop-shadow(5px 5px 10px $color7);
+        }
+        h2{
+            width: 80%;
+            padding: 15px 0;
+            text-align: center;
+            font-family: 'Macondo';
+            font-size: 30px;
+            color: $color6;
+            background: rgba( $color7, 0.5 );
+            box-shadow: 0 8px 32px 0 rgba( $color6, 0.37 );
+            backdrop-filter: blur( 6px );
+            -webkit-backdrop-filter: blur( 6px );
+            border-radius: 10px;
+            border: 1px solid rgba( $color7, 0.18 );
+        }
+        .juegos{
+            width: 40%;
+            height: 30em;
+            padding-top: 3em;
+            margin: 15px 7% 10px 3%;
+            background: rgba( $color7, 0.4 );
+            box-shadow: 0 8px 32px 0 rgba( $color6, 0.37 );
+            backdrop-filter: blur( 3px );
+            -webkit-backdrop-filter: blur( 2px );
+            border-radius: 10px;
+            border: 1px solid rgba( $color7, 0.18 );
+            transition: all 1s;
+            &:hover{
+                background: rgba( $color7, 0.65 );
+            }
+            .renglon{
+                display: flex;
+                justify-content: space-around;
+                margin: 4px 2px;
+                padding: 5px 0;
+                transition: all 1s;
+                &:hover{
+                    background: rgba( $color7, 0.7 );
+                    cursor: default;
+                }
+                .pais-juegos{
+                    width: 35%;
+                    font-size: 24px;
+                    color: $color6;
+                }
+                input{
+                    width: 10%;
+                    background-color: $color2;
+                    border: 2px solid $color4;
+                    border-radius: 3px;
+                    color: $color6;
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: 900;
+                    transition: all 1s;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: $color6;
+                        border: 2px solid $color5;
+                        color: $color1;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            button{
+                width: 50%;
+                margin: 15px 25%;
+                background-color: $color5;
+                border: 2px solid $color3;
+                padding: 10px;
+                color: $color6;
+                font-size: 14px;
+                font-weight: 600;
+                border-radius: 3px;
+                transition: all 1s;
+                &:hover{
+                    cursor: pointer;
+                    background-color: $color6;
+                    border: 2px solid $color5;
+                    color: $color1;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .playoff{
+            width: 50%;
+            margin-left: 25%;
+        }
+    
+        .tabla{
+            width: 40%;
+            height: 15em;
+            margin: 25px 5%;
+            background: rgba( $color7, 0.4 );
+            box-shadow: 0 8px 32px 0 rgba( $color6, 0.37 );
+            backdrop-filter: blur( 2px );
+            -webkit-backdrop-filter: blur( 2px );
+            border-radius: 10px;
+            border: 1px solid rgba( $color7, 0.18 );
+            .puesto{
+                display: flex;
+                justify-content: space-around;
+                transition: all 1s;
+                &:hover{
+                    background: rgba( $color7, 0.7 );
+                    cursor: default;
+                }
+                .pais{
+                    width: 30%;
+                    color: $color6;
+                    font-size: 20px;
+                    font-weight: 800;
+                    margin-left: 1%;
+                }
+                .stat{
+                    width: 8%;
+                    margin: 0 1%;
+                    font-size: 20px;
+                    color: $color6;
+                    text-align: center;
+                }
+                .tabla-titulo{
+                    font-weight: 800;
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+.playoff-general{
+    
+    .grupo-individual{
+        h2{
+            width: 100%;
+        }
+        .octavos{
+            height: 38em;
+        }
+        .cuartos{
+            height: 25em;
+        }
+        .semi{
+            height: 16em;
+        }
+        .final{
+            height: 12em;
+        }
+    }
+    .podio{
+        background: rgba( $color7, 0.4 );
+        box-shadow: 0 8px 32px 0 rgba( $color6, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 2px );
+        border-radius: 10px;
+        border: 1px solid rgba( $color7, 0.18 );
+        padding: 3em;
+        margin-bottom: 5em;
+        width: 90%;
+        margin-left: 5%;
+        div{
+            text-align: center;
+            font-size: 36px;
+            color: $color6;
+            padding: 0.5em;
+        }
+        div:nth-child(1){
+            font-weight: 900;
+            animation: campeon 3s ease 0s infinite normal none ;
+        }
+    }
+}
+
+@keyframes campeon{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.2) ;
+    }
+    50%{
+        transform: scale(1);
+        color: #a87b05
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,96 @@
+@media (max-width: 500px) {
+    .navegacion{
+        h1{
+            font-size: 0vw;
+            margin-top: calc((50px - 1em) / 3);
+        }
+    }
+    .grupo-individual{
+        flex-wrap: wrap;
+        h2{
+            width: 35%;
+            font-size: 22px;
+        }
+        img{
+            width: 10vw;
+            height: 10vw;
+            margin-top: 15px;
+        }
+        .juegos{
+            width: 100%;
+            .renglon{
+                .pais-juegos{
+                    font-size: 14px;
+                    padding-left: 4px;
+                }
+            }
+            button{
+                width: 50%;
+                margin-left: 25%;
+            }
+        }
+        .tabla{
+            width: 100%;
+            margin-left: 10px;
+            .puesto{
+                .pais, .stat{
+                    font-size: 14px;
+                }
+            }
+        }
+        .playoff{
+            width: 100%;
+            margin-left: 10px;
+        }
+    }
+    
+}
+body{
+    footer{
+        p{
+            font-size: 20px;
+        }
+    }
+}
+@media (min-width: 501px) and (max-width: 1080px){
+    .grupo-individual{
+        flex-wrap: wrap;
+        h2{
+            width: 35%;
+            font-size: 22px;
+        }
+        img{
+            width: 10vw;
+            height: 10vw;
+            margin-top: 15px;
+        }
+        .juegos{
+            .renglon{
+                .pais-juegos{
+                    font-size: 2.5vw;
+                    padding-left: 4px;
+                }
+                input{
+                    height: 3vw;
+                }
+            }
+            button{
+                width: 50%;
+                margin-left: 25%;
+            }
+        }
+        .tabla{
+            width: 45%;
+            margin: 25px 0;
+            .puesto{
+                .pais, .stat{
+                    font-size: 2.5vw;
+                }
+            }
+        }
+        .playoff{
+            width: 100%;
+            margin-left: 10px;
+        }
+    }
+}

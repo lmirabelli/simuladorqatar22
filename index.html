@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="javascript/variables.js"></script>
+    <script defer src="javascript/grupos.js"></script>
+    <script defer src="javascript/procresult.js"></script>
+    <script defer src="javascript/main.js"></script>
+    <link rel="stylesheet" href="estilos/main-page-css.css">
+    <link rel="shortcut icon" href="img/logoQatar.png" type="image/x-icon">
+    <title>Simulador de QATAR 2022</title>
+</head>
+
+<body>
+    <nav class="navegacion">
+        <img src="img/logoQatar.png" alt="">
+        <h1>Simulador Qatar 2022</h1>
+        <button id="borrar">Borrar Simulacion</button>
+        <button><a href="html/mundiales.html">historial</a></button>
+    </nav>
+    <div class="grupos">
+
+        <!--------------
+            GRUPO A
+         -------------->
+
+        <div class="grupo-individual">
+            <img src="img/1.png" alt="">
+            <img src="img/2.png" alt="">
+            <h2>Grupo A</h2>
+            <img src="img/3.png" alt="">
+            <img src="img/4.png" alt="">
+            <div class="juegos" id="grupoA">
+            </div>
+            <div class="tabla" id="TablaA">
+
+            </div>
+        </div>
+
+        <!--------------
+            GRUPO B
+         -------------->
+
+        <div class="grupo-individual">
+            <img src="img/5.png" alt="">
+            <img src="img/6.png" alt="">
+            <h2>Grupo B</h2>
+            <img src="img/7.png" alt="">
+            <img src="img/8.png" alt="">
+            <div class="juegos" id="grupoB">
+
+            </div>
+            <div class="tabla" id="TablaB">
+
+            </div>
+        </div>
+
+        <!--------------
+            GRUPO C
+         -------------->
+        <div class="grupo-individual">
+            <img src="img/9.png" alt="">
+            <img src="img/10.png" alt="">
+            <h2>Grupo C</h2>
+            <img src="img/11.png" alt="">
+            <img src="img/12.png" alt="">
+            <div class="juegos" id="grupoC">
+            </div>
+            <div class="tabla" id="TablaC">
+
+            </div>
+        </div>
+
+        <!--------------
+            GRUPO D
+         -------------->
+
+        <div class="grupo-individual">
+            <img src="img/13.png" alt="">
+            <img src="img/14.png" alt="">
+            <h2>Grupo D</h2>
+            <img src="img/15.png" alt="">
+            <img src="img/16.png" alt="">
+            <div class="juegos" id="grupoD">
+
+            </div>
+            <div class="tabla" id="TablaD">
+
+            </div>
+        </div>
+
+        <!--------------
+            GRUPO E
+         -------------->
+
+        <div class="grupo-individual">
+            <img src="img/17.png" alt="">
+            <img src="img/18.png" alt="">
+            <h2>Grupo E</h2>
+            <img src="img/19.png" alt="">
+            <img src="img/20.png" alt="">
+            <div class="juegos" id="grupoE">
+
+            </div>
+            <div class="tabla" id="TablaE">
+
+            </div>
+        </div>
+
+        <!--------------
+        GRUPO F
+     -------------->
+
+        <div class="grupo-individual">
+            <img src="img/21.png" alt="">
+            <img src="img/22.png" alt="">
+            <h2>Grupo F</h2>
+            <img src="img/23.png" alt="">
+            <img src="img/24.png" alt="">
+            <div class="juegos" id="grupoF">
+            </div>
+            <div class="tabla" id="TablaF">
+
+            </div>
+        </div>
+
+        <!--------------
+        GRUPO G
+     -------------->
+        <div class="grupo-individual">
+            <img src="img/25.png" alt="">
+            <img src="img/26.png" alt="">
+            <h2>Grupo G</h2>
+            <img src="img/27.png" alt="">
+            <img src="img/28.png" alt="">
+            <div class="juegos" id="grupoG">
+
+            </div>
+            <div class="tabla" id="TablaG">
+
+            </div>
+        </div>
+
+        <!--------------
+        GRUPO H
+     -------------->
+
+        <div class="grupo-individual">
+            <img src="img/29.png" alt="">
+            <img src="img/30.png" alt="">
+            <h2>Grupo H</h2>
+            <img src="img/31.png" alt="">
+            <img src="img/32.png" alt="">
+            <div class="juegos" id="grupoH">
+
+            </div>
+            <div class="tabla" id="TablaH">
+
+            </div>
+        </div>
+    </div>
+    <div class="playoff-general">
+        <div class="grupo-individual">
+            <h2>Octavos de Final</h2>
+            <div class="juegos octavos playoff" id="octavos">
+                <div class="renglon">
+                    <p class="pais-juegos" id="a1">Primero Grupo A</p>
+                    <p class="pais-juegos" id="b2">Segundo Grupo B</p>
+                    <input id="octavosA1" type="text">
+                    <input id="octavosB1" type="text">
+                </div>
+                <div class="renglon">
+                    <p class="pais-juegos" id="c1">Primero Grupo C</p>
+                    <p class="pais-juegos" id="d2">Segundo Grupo D</p>
+                    <input id="octavosA2" type="text">
+                    <input id="octavosB2" type="text">
+                </div>
+                <div class="renglon">
+                    <p class="pais-juegos" id="e1">Primero Grupo E</p>
+                    <p class="pais-juegos" id="f2">Segundo Grupo F</p>
+                    <input id="octavosA3" type="text">
+                    <input id="octavosB3" type="text">
+                </div>
+                <div class="renglon">
+                    <p class="pais-juegos" id="g1">Primero Grupo G</p>
+                    <p class="pais-juegos" id="h2">Segundo Grupo H</p>
+                    <input id="octavosA4" type="text">
+                    <input id="octavosB4" type="text">
+                </div>
+                <div class="renglon">
+                    <p class="pais-juegos" id="a2">Segundo Grupo A</p>
+                    <p class="pais-juegos" id="b1">Primero Grupo B</p>
+                    <input id="octavosA5" type="text">
+                    <input id="octavosB5" type="text">
+                </div>
+                <div class="renglon">
+                    <p class="pais-juegos" id="c2">Segundo Grupo C</p>
+                    <p class="pais-juegos" id="d1">Primero Grupo D</p>
+                    <input id="octavosA6" type="text">
+                    <input id="octavosB6" type="text">
+                </div>
+                <div class="renglon">
+                    <p class="pais-juegos" id="e2">Segundo Grupo E</p>
+                    <p class="pais-juegos" id="f1">Primero Grupo F</p>
+                    <input id="octavosA7" type="text">
+                    <input id="octavosB7" type="text">
+                </div>
+                <div class="renglon">
+                    <p class="pais-juegos" id="g2">Segundo Grupo G</p>
+                    <p class="pais-juegos" id="h1">Primero Grupo H</p>
+                    <input id="octavosA8" type="text">
+                    <input id="octavosB8" type="text">
+                </div>
+                <button id="botonOctavos">Procesar Resultados</button>
+            </div>
+        </div>
+        <div class="grupo-individual">
+            <h2>Cuartos de Final</h2>
+            <div class="juegos cuartos playoff" id="cuartos">
+                <div class="renglon">
+                    <p class="pais-juegos" id="cuartos-1">Ganador Partido 1</p>
+                    <p class="pais-juegos" id="cuartos-2">Ganador Partido 2</p>
+                    <input id="cuartosA1" type="text">
+                    <input id="cuartosB1" type="text">
+                </div>
+                <div class="renglon">
+                    <p class="pais-juegos" id="cuartos-3">Ganador Partido 3</p>
+                    <p class="pais-juegos" id="cuartos-4">Ganador Partido 4</p>
+                    <input id="cuartosA2" type="text">
+                    <input id="cuartosB2" type="text">
+                </div>
+                <div class="renglon">
+                    <p class="pais-juegos" id="cuartos-5">Ganador Partido 5</p>
+                    <p class="pais-juegos" id="cuartos-6">Ganador Partido 6</p>
+                    <input id="cuartosA3" type="text">
+                    <input id="cuartosB3" type="text">
+                </div>
+                <div class="renglon">
+                    <p class="pais-juegos" id="cuartos-7">Ganador Partido 7</p>
+                    <p class="pais-juegos" id="cuartos-8">Ganador Partido 8</p>
+                    <input id="cuartosA4" type="text">
+                    <input id="cuartosB4" type="text">
+                </div>
+                <button id="botonCuartos">Procesar Resultados</button>
+            </div>
+        </div>
+        <div class="grupo-individual">
+            <h2>Semisfinales</h2>
+            <div class="juegos semi playoff" id="semis">
+                <div class="renglon">
+                    <p class="pais-juegos" id="semis-1">Ganador Partido 1</p>
+                    <p class="pais-juegos" id="semis-2">Ganador Partido 2</p>
+                    <input id="semisA1" type="text">
+                    <input id="semisB1" type="text">
+                </div>
+                <div class="renglon">
+                    <p class="pais-juegos" id="semis-3">Ganador Partido 3</p>
+                    <p class="pais-juegos" id="semis-4">Ganador Partido 4</p>
+                    <input id="semisA2" type="text">
+                    <input id="semisB2" type="text">
+                </div>
+                <button id="botonSemis">Procesar Resultados</button>
+            </div>
+        </div>
+        <div class="grupo-individual">
+            <h2>Tercer Puesto</h2>
+            <div class="juegos final playoff" id="tercer">
+                <div class="renglon">
+                    <p class="pais-juegos" id="tercer-1">Perdedor Partido 1</p>
+                    <p class="pais-juegos" id="tercer-2">Perdedor Partido 2</p>
+                    <input id="tercerA1" type="text">
+                    <input id="tercerB1" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="grupo-individual">
+            <h2>Final</h2>
+            <div class="juegos final playoff" id="final">
+                <div class="renglon">
+                    <p class="pais-juegos" id="final-1">Ganador Partido 1</p>
+                    <p class="pais-juegos" id="final-2">Ganador Partido 2</p>
+                    <input id="finalA1" type="text">
+                    <input id="finalB1" type="text">
+                </div>
+                <button id="botonFinal">Procesar Resultados</button>
+            </div>
+        </div>
+        <div class="podio">
+            <div id="campeon"></div>
+            <div id="subcampeon"></div>
+            <div id="tercero"></div>
+        </div>
+        <footer>
+            <p>&copy;2022 - Leonardo Mirabelli</p>
+        </footer>
+    </div>
+</body>
+</html>
